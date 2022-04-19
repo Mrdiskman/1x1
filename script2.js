@@ -3,14 +3,16 @@ function position(firstPlace, secondPlace, lastPlace){
     let podio = [firstPlace, secondPlace, lastPlace]
 
     if(lastPlace==="Daniel"){
-         let ultimoColocado = [firstPlace, "Daniel", secondPlace]
+         let ultimoColocado = ["1 lugar", firstPlace,"2 lugar, Daniel", "3 lugar", secondPlace]
         return ultimoColocado.join(", ")
     } 
     else if("Daniel"===secondPlace){
-        let penultimoColocado = ["Daniel", firstPlace, secondPlace]
-        return penultimoColocado.join(", ")
+        let penultimoColocado = ["1 lugar, Daniel", "2 lugar", firstPlace, "3 lugar", lastPlace]
+        return penultimoColocado.join(", ") 
      }
      else {
          return podio
      }
     }
+
+    console.log(position("Rafael", "Manoel", "Daniel"))
