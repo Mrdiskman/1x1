@@ -15,4 +15,4 @@ function position(firstPlace, secondPlace, lastPlace){
      }
     }
 
-    console.log(position("Rafael", "Manoel", "Daniel"))
+    position("Rafael", "Manoel", "Daniel")
